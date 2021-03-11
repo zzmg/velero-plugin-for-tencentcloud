@@ -138,7 +138,7 @@ func (o *ObjectStore) Init(config map[string]string) error {
 	}
 	secretId := os.Getenv("TENCENT_CLOUD_SECRETID")
 	secretKey := os.Getenv("TENCENT_CLOUD_SECRETKEY")
-	o.log.Printf("tencentcloud ak: %s, sk:%s ", secretId, secretKey)
+	//o.log.Printf("tencentcloud ak: %s, sk:%s ", secretId, secretKey)
 	httpClient := http.Client{
 		Transport: &cos.AuthorizationTransport{
 			SecretID:  secretId,
